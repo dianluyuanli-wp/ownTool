@@ -2,14 +2,26 @@
   "name": "xiaohuli-package",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
+    "compile": "./node_modules/.bin/babel src --out-dir lib",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-object-assign": "^7.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/runtime-corejs2": "^7.1.2"
+  }
 }
