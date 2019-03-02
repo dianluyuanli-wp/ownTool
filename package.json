@@ -15,7 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/plugin-transform-object-assign": "^7.2.0"
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/runtime": "^7.3.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
